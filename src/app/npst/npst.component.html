@@ -1,0 +1,39 @@
+<!-- <h2>1-anchor tags ?</h2>
+<h2>2-block and inline difference ?</h2>
+<h2>3-selectors in css ? *universal selectors *id *class</h2>
+<h2>4-inline css , internal css ,external css</h2>
+<h2>5-angular js and angualar difference</h2>
+<h2>6-Es5 and ES6 difference</h2>
+<h2>7-dependency injection</h2>
+<h2>8-auth guard</h2>
+<h2>parent to child</h2>
+<h2>types of directives</h2>
+<h2>types of data binding</h2>
+<h2>pipes</h2>
+<h2></h2> -->
+<div class="total">
+    <div class="container ">
+    <div class="row ">
+      <div class="col" *ngFor="let data of Input">
+        <h4 class="text-center"><strong>{{data.cardtitle}}</strong></h4>
+        
+        <div class="profile-card-4 text-center rounded">
+            <div class="profile-content">
+                <div class="profile-name">John Doe
+                    <p>@johndoedesigner</p>
+                </div>
+                <div class="profile-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</div>
+                <br>
+                <br>
+                <div class="row mx-auto">
+                    <div class="col-4 mx-auto" *ngFor="let newdata of data.check">
+                        <div class="profile-overview">
+                            <p><strong>{{newdata.type}}</strong></p>
+                            <h4>{{newdata.data}}</h4></div>
+                    </div>               
+                </div>
+            </div>
+            </div>
+      </div>  
+    </div>
+    </div>

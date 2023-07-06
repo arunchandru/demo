@@ -1,0 +1,20 @@
+<h1 class="text-center">Interview questions</h1>
+
+<div class="container">
+
+  <h5 class="text-center">Dropdown :</h5>
+
+  <select name="Interviews" id="Interviews" [(ngModel)]="routing" class="bg-success " [value]="digit" (change)="companySelect()">
+    <option routerLinkActive="active" value="chennaiinterview">Chennai Interview</option>
+    <option routerLinkActive="active" value="tibil">Tibil Solutions</option>
+    <option routerLinkActive="active" value="digit">Digit Insurance</option>
+    <option routerLinkActive="active" value="Npst">Npst</option>
+  </select>
+
+
+
+  <!-- <input type="text" [(ngModel)]="routing"> -->
+
+  <!-- <app-body [routing]="routing"></app-body> -->
+</div>
+<router-outlet></router-outlet>

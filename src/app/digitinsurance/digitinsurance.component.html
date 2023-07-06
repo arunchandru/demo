@@ -1,0 +1,39 @@
+<h2>1-passing data ?</h2>
+<h2>2-let and var difference ?</h2>
+<h2>3-promise and observables ?</h2>
+<h2>4-color and background difference</h2>
+
+
+<br>    
+<br>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Age </th>
+        <th scope="col">Gender </th>
+        <th scope="col">Profession </th>
+        <th scope="col">Communications</th>
+      </tr>
+    </thead>
+    <tbody> 
+
+      <tr *ngFor="let item of input;index as i">
+        <th scope="row">{{i+1}}</th>
+        <td>{{item.firstName}}</td>
+        <td>{{item.lastName}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.gender}}</td>
+        <td>{{item.profession}}</td>
+        <td >
+            <tr *ngFor="let commdetails of item.communications">
+              {{commdetails.communicationType}}-{{commdetails.communicationId}}
+            </tr>
+           
+        </td>
+      </tr>
+    
+    </tbody>
+  </table>
